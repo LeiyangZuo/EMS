@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name></display-name>
+
+	<!-- LoginServlet注册 -->
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>cn.EMS.Servlet.Login.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- LoginAdminServlet 注册 -->
+	<servlet>
+		<servlet-name>LoginAdminServlet</servlet-name>
+		<servlet-class>cn.EMS.Servlet.Login.LoginAdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginAdminServlet</servlet-name>
+		<url-pattern>/LoginAdminServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- StudentServlet注册 -->
+	<servlet>
+		<servlet-name>StudentServlet</servlet-name>
+		<servlet-class>cn.EMS.Servlet.Student.StudentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentServlet</servlet-name>
+		<url-pattern>/StudentServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+	<!-- StudentManagementServlet 注册 -->
+	<servlet>
+		<servlet-name>StudentManagementServlet</servlet-name>
+		<servlet-class>cn.EMS.Servlet.Admin.StudentManagementServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentManagementServlet</servlet-name>
+		<url-pattern>/StudentManagementServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- AdminServlet 注册 -->
+	<servlet>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>cn.EMS.Servlet.Admin.AdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/AdminServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- TeacherManagementServlet注册 -->
+	<servlet>
+		<servlet-name>TeacherManagementServlet</servlet-name>
+		<servlet-class>cn.EMS.Servlet.Admin.TeacherManagementServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TeacherManagementServlet</servlet-name>
+		<url-pattern>/TeacherManagementServlet</url-pattern>
+	</servlet-mapping>
+
+	<!--CollegeManagementServlet注册 -->
+	<servlet>
+		<servlet-name>CollegeManagementServlet</servlet-name>
+		<servlet-class>cn.EMS.Servlet.Admin.CollegeManagementServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CollegeManagementServlet</servlet-name>
+		<url-pattern>/CollegeManagementServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- CourseManagementServlet 注册 -->
+	<servlet>
+		<servlet-name>CourseManagementServlet</servlet-name>
+		<servlet-class>cn.EMS.Servlet.Admin.CourseManagementServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CourseManagementServlet</servlet-name>
+		<url-pattern>/CourseManagementServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<!--TeacherServlet注册 -->
+	<servlet>
+		<servlet-name>TeacherServlet</servlet-name>
+		<servlet-class>cn.EMS.Servlet.Teacher.TeacherServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TeacherServlet</servlet-name>
+		<url-pattern>/TeacherServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- NewsServlet注册 -->
+	<servlet>
+		<servlet-name>NewsServlet</servlet-name>
+		<servlet-class>cn.EMS.Servlet.News.NewsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NewsServlet</servlet-name>
+		<url-pattern>/NewsServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>cn.EMS.Hander.EncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+	<!-- welcome界面 -->
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

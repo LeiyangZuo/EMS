@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="EducationManagementSystem"
+  id="myeclipse.1395841636219"
+  context-root="/EducationManagementSystem"
+  j2ee-spec="6.0"
+  archive="EducationManagementSystem.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebContent" />
+  </attributes>
+</project-module>
+
